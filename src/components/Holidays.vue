@@ -24,7 +24,6 @@ export default {
   },
   mounted: function() {
     this.axios.get('http://nolaborables.com.ar/API/v1/actual').then((response) => {
-      console.log(response.data)
       this.holidays = response.data;
     })
   }
