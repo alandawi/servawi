@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import API from '../api/endpoints'
+
 export default {
   name: 'holidays',
   data () {
@@ -23,7 +25,7 @@ export default {
     }
   },
   mounted: function() {
-    this.axios.get('http://nolaborables.com.ar/API/v1/actual').then((response) => {
+    this.axios.get(API.holidays).then((response) => {
       this.holidays = response.data;
     })
   }

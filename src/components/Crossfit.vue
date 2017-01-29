@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import API from '../api/endpoints'
+
 export default {
   name: 'crossfit',
   data () {
@@ -17,7 +19,7 @@ export default {
     }
   },
   mounted: function() {
-    this.axios.get('https://graph.facebook.com/v2.8/394479783985567/posts/?fields=attachments%7Bmedia%7D&limit=6&access_token=646098862244678%7C4WrxTQays9OoJa2PmVaiN3e-tyg').then((response) => {
+    this.axios.get(API.crossfit).then((response) => {
       this.crossfit = response.data.data;
       console.log(this.crossfit);
     })
@@ -27,6 +29,6 @@ export default {
 
 <style scoped>
 .item-crossfit {
-  margin: 10px 0 !important;
+  margin-bottom: 10px !important;
 }
 </style>
