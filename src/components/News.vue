@@ -6,7 +6,7 @@
 	  </md-card-media>
 
 	  <md-card-header>
-	    <div class="md-title" v-text="item.attachments.data[0].title"></div>
+	    <a v-bind:href="item.link" target="_blank"><div class="md-title" v-text="item.attachments.data[0].title"></div></a>
 	    <div class="md-subhead" v-text="item.attachments.data[0].description">Subtitle here</div>
 	  </md-card-header>
 	</md-card>
@@ -33,4 +33,7 @@ export default {
 </script>
 
 <style scoped>
+a {
+	color: #000000 !important;
+}
 </style>
