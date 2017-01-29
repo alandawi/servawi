@@ -1,8 +1,7 @@
 <template>
   <div class="section-weather">
-  {{msg}}
-
-  <router-link to="/">home</router-link>
+    {{msg}}
+    <router-link to="/">home</router-link>
   </div>
 </template>
 

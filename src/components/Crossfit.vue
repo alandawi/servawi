@@ -21,7 +21,6 @@ export default {
   mounted: function() {
     this.axios.get(API.crossfit).then((response) => {
       this.crossfit = response.data.data;
-      console.log(this.crossfit);
     })
   }
 }
