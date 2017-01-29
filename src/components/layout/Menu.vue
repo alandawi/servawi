@@ -20,28 +20,28 @@
 		<div class="phone-viewport">
 		  <md-list>
 		    <md-list-item>
-		      <md-icon>whatshot</md-icon>
+		      <md-icon>home</md-icon>
 		      <span @click="openPage('')">Home</span>
 		    </md-list-item>
 
 		    <md-list-item>
-		      <md-icon>whatshot</md-icon>
+		      <md-icon>radio</md-icon>
+		      <span @click="openPage('news')">News</span>
+		    </md-list-item>
+
+		    <md-list-item>
+		      <md-icon>directions_run</md-icon>
 		      <span @click="openPage('crossfit')">Crossfit</span>
 		    </md-list-item>
 
 		    <md-list-item>
-		      <md-icon>whatshot</md-icon>
+		      <md-icon>wb_sunny</md-icon>
 		      <span @click="openPage('weather')">Weather</span>
 		    </md-list-item>
 
 		    <md-list-item>
-		      <md-icon>whatshot</md-icon>
+		      <md-icon>date_range</md-icon>
 		      <span @click="openPage('holidays')">Holidays</span>
-		    </md-list-item>
-
-		    <md-list-item>
-		      <md-icon>whatshot</md-icon>
-		      <span @click="openPage('movies')">Movies</span>
 		    </md-list-item>
 		  </md-list>
 		</div>
@@ -68,6 +68,5 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 </style>

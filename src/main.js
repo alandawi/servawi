@@ -10,7 +10,7 @@ import Home from './components/Home'
 import Crossfit from './components/Crossfit'
 import Weather from './components/Weather'
 import Holidays from './components/Holidays'
-import Movies from './components/Movies'
+import News from './components/News'
 
 Vue.use(VueAxios, axios)
 Vue.use(VueMaterial)
@@ -21,7 +21,7 @@ const routes = [
 	{path: '/crossfit', component: Crossfit},
 	{path: '/weather', component: Weather},
 	{path: '/holidays', component: Holidays},
-	{path: '/movies', component: Movies}
+	{path: '/news', component: News}
 ]
 
 const router = new VueRouter({
