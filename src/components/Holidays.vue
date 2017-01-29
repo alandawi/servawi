@@ -1,8 +1,6 @@
 <template>
   <div class="section-holidays">
-  {{msg}}
-
-  <router-link to="/">home</router-link>
+    {{msg}}
   </div>
 </template>
 
@@ -13,10 +11,14 @@ export default {
     return {
       msg: 'Base template'
     }
+  },
+  mounted: function() {
+    this.axios.get('http://nolaborables.com.ar/API/v1/actual').then((response) => {
+      console.log(response.data)
+    })
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 </style>
